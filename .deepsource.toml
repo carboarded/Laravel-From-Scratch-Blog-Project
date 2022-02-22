@@ -10,5 +10,12 @@ exclude_patterns = [
 ]
 
 [[analyzers]]
-name = "php"
+name = "go"
+enabled = true
+
+  [analyzers.meta]
+  import_root = "github.com/carboarded/Laravel-From-Scratch-Blog-Project"
+
+[[transformers]]
+name = "gofumpt"
 enabled = true
